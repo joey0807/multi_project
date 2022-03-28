@@ -1,0 +1,21 @@
+{% extends "login_base.html" %}
+{% block content %}
+
+<div class="box">
+    <h1>로그인</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+         <p>{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form action="/check" method="post">
+        <input type="text" name="Email" placeholder="이메일" required="required"/>
+        <input type="password" name="pw" placeholder="비밀번호" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">로그인</button>
+        <a href="{{ url_for('check2') }}" class="btn btn-secondary btn-block btn-large">회원가입</a>
+    </form>
+</div>
+
+{% endblock %}

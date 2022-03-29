@@ -13,8 +13,10 @@
     <form action="/check" method="post">
         <input type="text" name="Email" placeholder="이메일" required="required"/>
         <input type="password" name="pw" placeholder="비밀번호" required="required"/>
-        <button type="submit" class="btn btn-primary btn-block btn-large">로그인</button>
-        <a href="{{ url_for('check2') }}" class="btn btn-secondary btn-block btn-large">회원가입</a>
+        <div class="pagination">
+          <button type="button" class="custom-btn btn-11 btn-large" onclick="location.href='{{ url_for('check2') }}'">회원가입</button>
+          <button type="submit" class="custom-btn btn-11 btn-large">로그인</button>
+        </div>  
     </form>
 </div>
 

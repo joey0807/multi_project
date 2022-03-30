@@ -135,10 +135,40 @@ def logout():
 @app.route('/mainpage')
 def mainpage():
     if session.get('Email', None) is not None: #로그인이 돼야
-        return render_template("mainpage.html") #메인페이지로 넘어갈 수 있음
+        
+        data = pd.DataFrame(Info.find(session['Email']))
+
+        if data.empty:
+            return render_template('mainpage.html')
+        else:
+            sex = data.iloc[-1][3]
+            age = data.iloc[-1][2]
+
+            print(sex, age)
+
+            data2 = pd.DataFrame(Info.find2(sex,age))
+
+            value1 = data2[2].to_string(index=False)
+            value2 = data2[3].to_string(index=False)
+            value3 = data2[4].to_string(index=False)
+            value4 = data2[5].to_string(index=False)
+            value5 = data2[6].to_string(index=False)
+            value6 = data2[7].to_string(index=False)
+            value7 = data2[8].to_string(index=False)
+            value8 = data2[9].to_string(index=False)
+            value9 = data2[10].to_string(index=False)
+            value10 = data2[11].to_string(index=False)
+            value11 = data2[12].to_string(index=False)
+            value12 = data2[13].to_string(index=False)
+            value13 = data2[14].to_string(index=False)
+            value14 = data2[15].to_string(index=False)
+
+        return render_template('mainpage.html',value1 = value1,value2 = value2,value3 = value3,value4 = value4,value5 = value5,value6 = value6,value7 = value7,value8 = value8,value9 = value9,value10 = value10,value11 = value11,value12 = value12,value13 = value13,value14 = value14)
     else: #로그인이 안되면 mainpage로 못넘어감
         flash('로그인을 해야 합니다')
-        return render_template('login.html')  
+        return render_template('login.html')
+
+    
 
 # 사용자정보 
 @app.route('/info')
@@ -215,37 +245,36 @@ def fig():
     return send_file(img, mimetype='image/png')
 
 #권장섭취량 시각화
-@app.route('/fig2', methods=['GET','POST'])
-def fig2():
+# @app.route('/fig2', methods=['GET','POST'])
+# def fig2():
 
-    data = pd.DataFrame(Info.find(session['Email']))
+#     data = pd.DataFrame(Info.find(session['Email']))
 
-    sex = data.iloc[-1][3]
-    age = data.iloc[-1][2]
+#     sex = data.iloc[-1][3]
+#     age = data.iloc[-1][2]
 
-    print(sex, age)
+#     print(sex, age)
 
-    data2 = pd.DataFrame(Info.find2(sex,age))
-    print(data2)
+#     data2 = pd.DataFrame(Info.find2(sex,age))
 
-    value1 = data2[2].to_string(index=False)
-    value2 = data2[3].to_string(index=False)
-    value3 = data2[4].to_string(index=False)
-    value4 = data2[5].to_string(index=False)
-    value5 = data2[6].to_string(index=False)
-    value6 = data2[7].to_string(index=False)
-    value7 = data2[8].to_string(index=False)
-    value8 = data2[9].to_string(index=False)
-    value9 = data2[10].to_string(index=False)
-    value10 = data2[11].to_string(index=False)
-    value11 = data2[12].to_string(index=False)
-    value12 = data2[13].to_string(index=False)
-    value13 = data2[14].to_string(index=False)
-    value14 = data2[15].to_string(index=False)
-    #print(value1)
+#     value1 = data2[2].to_string(index=False)
+#     value2 = data2[3].to_string(index=False)
+#     value3 = data2[4].to_string(index=False)
+#     value4 = data2[5].to_string(index=False)
+#     value5 = data2[6].to_string(index=False)
+#     value6 = data2[7].to_string(index=False)
+#     value7 = data2[8].to_string(index=False)
+#     value8 = data2[9].to_string(index=False)
+#     value9 = data2[10].to_string(index=False)
+#     value10 = data2[11].to_string(index=False)
+#     value11 = data2[12].to_string(index=False)
+#     value12 = data2[13].to_string(index=False)
+#     value13 = data2[14].to_string(index=False)
+#     value14 = data2[15].to_string(index=False)
+#     #print(value1)
 
-    return render_template('mainpage.html', value1 = value1,value2 = value2,value3 = value3,value4 = value4,value5 = value5,value6 = value6,value7 = value7,value8 = value8,value9 = value9,value10 = value10,value11 = value11,value12 = value12,value13 = value13,value14 = value14)
-    #return "<h3>"+value1+"</h3>" 
+#     return render_template('mainpage.html', value1 = value1,value2 = value2,value3 = value3,value4 = value4,value5 = value5,value6 = value6,value7 = value7,value8 = value8,value9 = value9,value10 = value10,value11 = value11,value12 = value12,value13 = value13,value14 = value14)
+#     #return "<h3>"+value1+"</h3>" 
 
 if __name__ == "__main__":
     app.secret_key = 'super secret key'

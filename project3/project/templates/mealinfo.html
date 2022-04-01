@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container" id="app"> 
+    <div class="box_13">   
+        <h1> 어휴~ 뱃살좀봐 </h1>
+          <div class="box_1 box13">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <p>
+                    <div class="image-container">
+                        <img style="width: 75%; height:500px" id="preview-image" src="static/detected_imgs/image0.jpg">
+                    </div>
+                  </p>
+                </li>
+              </ul>
+          </div> 
+    </div>
+    <div class="box_14">
+         <div class="row">
+               <div class="col">
+                     <p><strong>식사구분 및 식사량
+                           <div class ="pagination">
+                                <div class ="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group" data-toggle="buttons" style="margin:10px;" aria-label="First group">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="mealtype" id="mealtype1" value="1" autocomplete="off"> 아침
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="mealtype" id="mealtype2" value="2" autocomplete="off"> 점심
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="mealtype" id="mealtype3" value="3" autocomplete="off"> 저녁
+                                        </label>
+                                    </div> 
+                                    <div class="btn-group" data-toggle="buttons" style="margin:10px;" aria-label="Second group">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="mealvol" id="mealvol1" value="1" autocomplete="off"> 1인분이하
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="mealvol" id="mealvol2" value="2" autocomplete="off"> 2인분
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="mealvol" id="mealvol3" value="3" autocomplete="off"> 3인분이상
+                                        </label>
+                                    </div> 
+                                </div>
+                           </div>   
+                    </strong></p>
+                </div>
+          </div>
+          <button type="submit" class="custom-btn btn-12 btn-large" style="float:right" v-on:click="">저장하기</button>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="http://madalla.kr/js/jquery-1.8.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+{% endblock %}

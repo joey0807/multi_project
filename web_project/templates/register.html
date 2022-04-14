@@ -1,0 +1,57 @@
+{% extends "login_base.html" %}
+{% block content %}
+
+<div class="box" id="app">
+  <h1 style="margin-bottom: 50px;">회원가입</h1>
+  <input type="text" name="Email" id="user_email" placeholder="이메일" required="required" style="margin-bottom: 20px;" />
+  <input type="text" name="name" id="user_name" placeholder="성명" required="required" style="margin-bottom: 20px;" />
+  <input type="password" name="pw" id="user_pw1" placeholder="비밀번호" required="required" style="margin-bottom: 20px;" />
+  <input type="password" name="pw2" id="user_pw2" placeholder="비밀번호 확인" required="required"
+    style="margin-bottom: 20px;" />
+  <button type="submit" class="custom-btn btn-11 btn-large" style="float:right" v-on:click="test_put()">가입완료</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  const app = new Vue({
+    el: "#app",
+    methods: {
+
+      test_put: () => {
+        axios("http://13.112.232.65:8989/user_account/", {
+          method: "put",
+          data: {
+            user_email: document.getElementById('user_email').value,
+            user_name: document.getElementById('user_name').value,
+            user_pw1: document.getElementById('user_pw1').value,
+            user_pw2: document.getElementById('user_pw2').value,
+          },
+        })
+          .then((response) => {
+            console.log(response.data)
+            if (response.data['status'] == true) {
+              alert('welcome');
+              window.location.href = 'http://13.112.232.65:8989/mainpage';
+            } else {
+              if (response.data['massage'] == 'pw') {
+                alert('check password');
+              } else {
+                alert('change Email');
+              }
+              // window.location.href = 'http://localhost:8989/mainpage/register';
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      },
+
+    },
+  });
+</script>
+
+{% endblock %}

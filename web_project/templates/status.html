@@ -1,0 +1,379 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<div class="container">
+    <div class="box_7">
+        <h1> 오늘의 식단은? </h1>
+        <div class="box_1 box7">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <p>
+                    <div id="yabanner"></div>
+                    </p>
+                    <div class="total_wrap">
+
+                        <span style="color: white;">총 칼로리</span>
+
+                        <div id="total_calorie" style="color: white;"></div>
+                    </div>
+
+                    <div>
+                        <div id="sikdan">
+                            <div class="title">
+                                <div>
+                                    음식명
+                                </div>
+                                <div>
+                                    칼로리
+                                </div>
+                                <div>
+                                    섭취량
+                                </div>
+                                <div>
+                                    설정
+                                </div>
+                            </div>
+                            <div id="items">
+                                <div class="item" style="display: none;">
+                                    <div class="food">
+                                        감자
+                                    </div>
+                                    <div class="cal">
+                                        125
+                                    </div>
+                                    <div class="liang">
+                                        <input type="text">
+                                    </div>
+                                    <div class="setting">
+                                        <!-- <button>삭제</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="append">
+                                <div class="food">
+                                    <input type="text" id="plus_food">
+                                </div>
+                                <div class="cal">
+                                    <input type="text" id="plus_cal">
+                                </div>
+                                <div class="liang">
+                                    <input type="text" id="plus_liang">
+                                </div>
+                                <div class="setting">
+                                    <button onClick="plus_item()">추가</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <input type="file" id="imageInput" />
+                    </form>
+                    <hr />
+                    <button class="custom-btn btn-11 btn-large" onclick="upload()">
+                        업로드
+                    </button>
+                    <button class="custom-btn btn-11 btn-large" onclick="save()">
+                        저장하기
+                    </button>
+                    <button class="custom-btn btn-11 btn-large" onclick="del()">
+                        삭제하기
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="box_6">
+        <h1> Today Calories </h1>
+        <div class="box_3 box6">
+            <table class="tg" width="100%" height="100%">
+                <thead>
+                    <tr>
+                        <th class="tg-ss6j">구분</th>
+                        <th class="tg-ss6j">기준표</th>
+                        <th class="tg-ss6j">오늘 기준</th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- <script src="http://madalla.kr/js/jquery-1.8.3.min.js"></script> -->
+
+<script>
+    const app = new Vue({
+        el: "#app",
+        methods: {
+            test_post: () => {
+                axios("http://13.112.232.65:8989/calorie/", {
+                    method: "post",
+                    data: {
+                        user_email: decodeURIComponent(document.cookie),
+                    },
+                })
+                    .then((response) => {
+                        localStorage.clear()
+
+                        localStorage.setItem('value1', response.data[2]);
+                        localStorage.setItem('value2', response.data[4]);
+                        localStorage.setItem('value3', response.data[5]);
+                        localStorage.setItem('value4', response.data[6]);
+                        localStorage.setItem('value5', response.data[7]);
+                        localStorage.setItem('value6', response.data[8]);
+                        localStorage.setItem('value7', response.data[9]);
+                        localStorage.setItem('value8', response.data[10]);
+                        localStorage.setItem('value9', response.data[11]);
+                        localStorage.setItem('value10', response.data[12]);
+                        localStorage.setItem('value11', response.data[13]);
+                        localStorage.setItem('value12', response.data[14]);
+                        localStorage.setItem('value13', response.data[15]);
+                        localStorage.setItem('value14', response.data[16]);
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            },
+
+
+        },
+    });
+</script>
+<script>
+    function del() {
+        const formData = new FormData();
+
+        formData.append("user_email", decodeURIComponent(document.cookie));
+        $.ajax({
+            type: "DELETE",
+            url: "http://13.112.232.65:8989/image/",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (res) {
+
+                console.log(res);
+            }
+        })
+    }
+
+
+    function save() {
+        // let item = document.getElementById("items").children[1].children[0].innerHTML;
+        let item = document.getElementById("items").children
+        let data = ''
+        let number = ''
+        for (i = 1; i < item.length; i++) {
+            // console.log(item[i].children[0].innerHTML);
+            data += item[i].children[0].innerHTML + ','
+            number += (document.getElementById("input_" + (i - 1)).value) + ',';
+
+        }
+        console.log(data)
+        console.log(number)
+        const formData = new FormData();
+        formData.append("data", data);
+        formData.append("user_email", decodeURIComponent(document.cookie));
+        formData.append("number", number);
+        $.ajax({
+            type: "PUT",
+            url: "http://13.112.232.65:8989/image/",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (res) {
+
+                console.log(res);
+            }
+        })
+    }
+
+    function remove(elem) {
+        elem.parentNode.removeChild(elem);
+        let del_cal = elem.children[1].innerHTML
+        add_cal('minus', del_cal);
+    }
+    let append_count = 0;
+    // btn.onClick = del_row('append_'+append_count); /
+
+    function del_row(name) {
+        console.log('del');
+        console.log(this);
+        console.log(name);
+        const element = document.getElementById(name);
+
+        console.log(element);
+        if (element != null) {
+            element.remove();
+        }
+
+    }
+
+    function add_cal(type, num) {
+        const total = document.getElementById("total_calorie");
+        if (type == 'minus') {
+            total.innerHTML = parseFloat(total.textContent) - parseInt(num);
+        } else if (type == 'plus') {
+            total.innerHTML = parseFloat(total.textContent) + parseInt(num);
+        }
+    }
+
+    function plus_item() {
+        console.log(3);
+
+        const items = document.getElementById("items");
+
+        const plus_food = document.getElementById("plus_food");
+        const plus_cal = document.getElementById("plus_cal");
+        const plus_liang = document.getElementById("plus_liang");
+
+        const item = document.createElement('div');
+        item.classList.add('append_' + append_count, 'item');
+        item.id = 'append_' + append_count;
+
+        const food = document.createElement('div');
+        food.innerHTML = plus_food.value;
+        const cal = document.createElement('div');
+        cal.innerHTML = plus_cal.value;
+        add_cal('plus', plus_cal.value);
+
+        const liang = document.createElement('div');
+        const liang_input = document.createElement('input');
+        liang.appendChild(liang_input);
+        liang_input.value = plus_liang.value;
+
+        plus_food.value = '';
+        plus_cal.value = '';
+        plus_liang.value = '';
+
+        const setting = document.createElement('div');
+
+
+        setting.innerHTML = "<button data-id=" + "append_" + append_count + " " + "onclick=" + "remove" + "(" + item.id + ")" + ">" + "삭제" + "</button>"
+
+
+
+
+        // btn.dataset.id = 'append_' + append_count;
+        // setting.appendChild(btn);
+
+        item.appendChild(food);
+        item.appendChild(cal);
+        item.appendChild(liang);
+        item.appendChild(setting);
+        items.append(item);
+
+
+        append_count += 1;
+    }
+
+
+    function upload() {
+
+        const imageInput = $("#imageInput")[0];
+        // 파일을 여러개 선택할 수 있으므로 files 라는 객체에 담긴다.
+        console.log("imageInput: ", imageInput.files)
+
+        if (imageInput.files.length === 0) {
+            alert("파일은 선택해주세요");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("image", imageInput.files[0]);
+
+
+        $.ajax({
+            type: "POST",
+            url: "http://13.112.232.65:8989/status/",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (res) {
+                result1 = res['result']
+
+                console.log(res);
+                yaGetBanner();
+                function yaGetBanner() {
+
+
+                    var el = document.getElementById("yabanner");
+
+
+
+
+                    var rand = Math.floor((Math.random() * 10000));
+                    console.log("err:", result1)
+                    el.innerHTML = "<img class='NO - CACHE' src='/static/" + result1 + '2' + '.jpeg' + '?' + rand + "'  alt='test' width='500px' height='500px'/>";
+                }
+            },
+            err: function (err) {
+                console.log("err:", err)
+            }
+        })
+    }
+</script>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+    .tg {
+        border-collapse: collapse;
+        border-color: #aabcfe;
+        border-radius: 12px;
+        border-spacing: 0;
+    }
+
+    .tg td {
+        background-color: #e8edff;
+        border-color: #aabcfe;
+        border-style: solid;
+        border-width: 1px;
+        color: #669;
+        font-family: 'Jua', cursive;
+        font-size: 20px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg th {
+        background-color: #b9c9fe;
+        border-color: #aabcfe;
+        border-style: solid;
+        border-width: 1px;
+        color: #039;
+        font-family: 'Jua', cursive;
+        font-size: 25px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg .tg-ss6j {
+        font-family: 'Jua' !important;
+        text-align: center;
+        vertical-align: top
+    }
+</style>
+
+
+{% endblock %}

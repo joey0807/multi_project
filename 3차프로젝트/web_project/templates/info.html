@@ -1,0 +1,241 @@
+{% extends "base.html" %}
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="app">
+  <div class="box_5">
+    <h1 style="margin-bottom:50px;">내정보</h1>
+    <div class="row">
+      <div class="col">
+        <div id="p1">1. 나 이(만) :
+          <input class="input_1" type="text" id="age" name="age" placeholder="나이" required="required"
+            value="{{user.age}}" />
+        </div>
+        <div id="p1" class="btn-group" data-toggle="buttons">
+          2. 성별 :
+          <label class="btn btn-primary" style="margin-left:10px;">
+            <input type="radio" name="sex" id="sex1" value="M" autocomplete="off"> 남성
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="sex" id="sex2" value="F" autocomplete="off"> 여성
+          </label>
+        </div>
+        <div id="p1">3. 체중(Kg) :
+          <input class="input_1" type="text" id="weight" name="weight" value="{{user.weight}}" placeholder="체중"
+            required="required" style="margin-bottom:20px;" />
+        </div>
+        <div id="p1">4. 신장(cm) :
+          <input class="input_1" type="text" id="height" name="height" value="{{user.height}}" placeholder="신장(키)"
+            required="required" style="margin-bottom:20px;" />
+        </div>
+        <div id="p1" class="btn-group" data-toggle="buttons">
+          5. 운동횟수(주) :
+          <label class="btn btn-primary" style="margin-left:10px;">
+            <input type="radio" name="exercise" id="exercise1" value="1" autocomplete="off"> 주2회 이하
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="exercise" id="exercise2" value="2" autocomplete="off"> 주3회
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="exercise" id="exercise3" value="3" autocomplete="off"> 주4회
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="exercise" id="exercise4" value="4" autocomplete="off"> 주5회 이상
+          </label>
+        </div>
+        <div id="p1" class="btn-group" data-toggle="buttons">
+          6. 음주(1회) :
+          <label class="btn btn-primary" style="margin-left:10px;">
+            <input type="radio" name="drink" id="drink1" value="1" autocomplete="off"> 소주반병 이하
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="drink" id="drink2" value="2" autocomplete="off"> 1병 이하
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="drink" id="drink3" value="3" autocomplete="off"> 1.5병 정도
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="drink" id="drink4" value="4" autocomplete="off"> 2병 정도
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="drink" id="drink5" value="5" autocomplete="off"> 2.5병 이상
+          </label>
+        </div>
+        <div id="p1" class="btn-group" data-toggle="buttons" style="margin-right:90px;">
+          7. 기저질환 :
+          <label class="btn btn-primary" style="margin-left:10px;">
+            <input type="radio" name="disease" id="disease1" value="Y" autocomplete="off"> Y(예)
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="disease" id="disease2" value="N" autocomplete="off"> N(아니오)
+        </div>
+        <div id="p1" class="btn-group" data-toggle="buttons">
+          8. 흡연여부 :
+          <label class="btn btn-primary" style="margin-left:10px;">
+            <input type="radio" name="smoke" id="smoke1" value="Y" autocomplete="off"> Y(예)
+          </label>
+          <label class="btn btn-primary">
+            <input type="radio" name="smoke" id="smoke2" value="N" autocomplete="off"> N(아니오)
+          </label>
+        </div>
+        <div class="pagination">
+          <button type="submit" class="custom-btn btn-11 btn-large" v-on:click="test_post()">저장하기</button>
+          <button type="button" class="custom-btn btn-11 btn-large" onclick="location.href='/mainpage'">메인으로</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<script>
+  const app = new Vue({
+    el: "#app",
+    methods: {
+
+      test_post: () => {
+        axios("http://bp.aidetector.link/user_info/", {
+          method: "post",
+          data: {
+            user_email: decodeURIComponent(document.cookie),
+            user_age: document.getElementById('age').value,
+            user_sex: $("input[type='radio'][name='sex']:checked").val(),
+            user_weight: document.getElementById('weight').value,
+            user_height: document.getElementById('height').value,
+            user_exercise: $("input[type='radio'][name='exercise']:checked").val(),
+            user_disease: $("input[type='radio'][name='disease']:checked").val(),
+            user_drink: $("input[type='radio'][name='drink']:checked").val(),
+            user_smoke: $("input[type='radio'][name='smoke']:checked").val(),
+          },
+
+        })
+          .then((response) => {
+            alert('저장되었습니다')
+            console.log(response.data)
+            window.location.href = 'http://bp.aidetector.link/mainpage/';
+          })
+          .catch((error) => {
+            alert('빈 칸이 있어요')
+          });
+      },
+
+
+
+    },
+  });
+</script>
+
+
+{% if user.sex == 'M' %}
+<script>
+  var sex = document.getElementById('sex1')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.sex == 'F' %}
+<script>
+  var sex = document.getElementById('sex2')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% endif %}
+
+
+{% if user.exercise == '1' %}
+<script>
+  var sex = document.getElementById('exercise1')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.exercise == '2' %}
+<script>
+  var sex = document.getElementById('exercise2')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.exercise == '3' %}
+<script>
+  var sex = document.getElementById('exercise3')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.exercise == '4' %}
+<script>
+  var sex = document.getElementById('exercise4')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% endif %}
+
+
+{% if user.drink == '1' %}
+<script>
+  var sex = document.getElementById('drink1')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.drink == '2' %}
+<script>
+  var sex = document.getElementById('drink2')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.drink == '3' %}
+<script>
+  var sex = document.getElementById('drink3')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.drink == '4' %}
+<script>
+  var sex = document.getElementById('drink4')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.drink == '5' %}
+<script>
+  var sex = document.getElementById('drink5')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% endif %}
+
+{% if user.disease == 'Y' %}
+<script>
+  var sex = document.getElementById('disease1')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.disease == 'N' %}
+<script>
+  var sex = document.getElementById('disease2')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% endif %}
+
+
+{% if user.smoke == 'Y' %}
+<script>
+  var sex = document.getElementById('smoke1')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% elif user.smoke == 'N' %}
+<script>
+  var sex = document.getElementById('smoke2')
+  sex.setAttribute('checked', 'checked')
+  sex.checked = true;
+</script>
+{% endif %}
+
+
+{% endblock %}

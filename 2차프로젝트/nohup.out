@@ -1,0 +1,1819 @@
+[I 14:29:47.012 NotebookApp] [nb_conda_kernels] enabled, 13 kernels found
+[I 14:29:47.027 NotebookApp] Writing notebook server cookie secret to /home/lab22/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 14:29:47.196 NotebookApp] Loading IPython parallel extension
+[W 2021-10-07 14:29:47.544 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2021-10-07 14:29:47.547 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-10-07 14:29:47.547 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-10-07 14:29:47.548 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-10-07 14:29:47.548 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-10-07 14:29:47.548 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-10-07 14:29:47.548 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2021-10-07 14:29:47.552 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jupyterlab
+[I 2021-10-07 14:29:47.552 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/envs/python3/share/jupyter/lab
+[I 14:29:47.559 NotebookApp] [nb_conda] enabled
+[I 14:29:47.559 NotebookApp] The port 8922 is already in use, trying another port.
+[I 14:29:47.560 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 14:29:47.560 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 14:29:47.560 NotebookApp] http://ip-172-31-44-143:8923/
+[I 14:29:47.560 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:31:57.820 NotebookApp] 302 GET / (175.209.64.54) 0.720000ms
+[I 14:31:57.859 NotebookApp] 302 GET /tree? (175.209.64.54) 0.720000ms
+[C 14:38:09.851 NotebookApp] received signal 15, stopping
+[I 14:38:09.852 NotebookApp] Shutting down 0 kernels
+[I 14:38:09.853 NotebookApp] Shutting down 0 terminals
+[I 09:41:53.381 NotebookApp] [nb_conda_kernels] enabled, 13 kernels found
+[I 09:41:53.536 NotebookApp] Loading IPython parallel extension
+[W 2022-02-17 09:41:53.844 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2022-02-17 09:41:53.848 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-02-17 09:41:53.848 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-02-17 09:41:53.848 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-02-17 09:41:53.848 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-02-17 09:41:53.848 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-02-17 09:41:53.849 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2022-02-17 09:41:53.853 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jupyterlab
+[I 2022-02-17 09:41:53.853 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/envs/python3/share/jupyter/lab
+[I 09:41:53.859 NotebookApp] [nb_conda] enabled
+[I 09:41:53.860 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 09:41:53.860 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 09:41:53.860 NotebookApp] http://ip-172-31-38-194:8922/
+[I 09:41:53.860 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 09:42:22.065 NotebookApp] 302 GET / (211.186.218.63) 0.520000ms
+[I 09:42:22.109 NotebookApp] 302 GET /tree? (211.186.218.63) 0.520000ms
+[I 09:42:27.663 NotebookApp] 302 POST /login?next=%2Ftree%3F (211.186.218.63) 36.630000ms
+[E 13:10:09.656 NotebookApp] Uncaught exception GET /tree (211.186.218.63)
+    HTTPServerRequest(protocol='http', host='35.77.132.99:8922', method='GET', uri='/tree', version='HTTP/1.1', remote_ip='211.186.218.63')
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1702, in _execute
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 3173, in wrapper
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/tree/handlers.py", line 54, in get
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: tree.html
+[E 13:10:09.657 NotebookApp] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1702, in _execute
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 3173, in wrapper
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/tree/handlers.py", line 54, in get
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: tree.html
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 585, in write_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: 500.html
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1217, in send_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 587, in write_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: error.html
+[E 13:10:09.658 NotebookApp] {
+      "Host": "35.77.132.99:8922",
+      "Connection": "keep-alive",
+      "Cache-Control": "max-age=0",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "Referer": "http://35.77.132.99:8922/login?next=%2Ftree%3F",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+      "Cookie": "_xsrf=2|1bc22c80|c04ac0f24211bbaec7db5362de1018cb|1645058542; username-35-77-132-99-8922=\"2|1:0|10:1645058547|26:username-35-77-132-99-8922|44:YjNjOWFkOTA5Y2JkNDUzZjkzN2U2MzI4MWFmYjJlNzE=|39b718b3971b7dab1d2807e1c2d94b3cfdf4ad64e0ccb01e8d627ef74c67c793\""
+    }
+[E 13:10:09.658 NotebookApp] 500 GET /tree (211.186.218.63) 1.960000ms referer=http://35.77.132.99:8922/login?next=%2Ftree%3F
+[E 13:10:19.639 NotebookApp] Uncaught exception GET /tree (211.186.218.63)
+    HTTPServerRequest(protocol='http', host='35.77.132.99:8922', method='GET', uri='/tree', version='HTTP/1.1', remote_ip='211.186.218.63')
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1702, in _execute
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 3173, in wrapper
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/tree/handlers.py", line 54, in get
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: tree.html
+[E 13:10:19.640 NotebookApp] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1702, in _execute
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 3173, in wrapper
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/tree/handlers.py", line 54, in get
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: tree.html
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 585, in write_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: 500.html
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/tornado/web.py", line 1217, in send_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 587, in write_error
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 515, in render_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/notebook/base/handlers.py", line 511, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+      File "/home/ubuntu/anaconda3/envs/python3/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    jinja2.exceptions.TemplateNotFound: error.html
+[E 13:10:19.640 NotebookApp] {
+      "Host": "35.77.132.99:8922",
+      "Connection": "keep-alive",
+      "Cache-Control": "max-age=0",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "Referer": "http://35.77.132.99:8922/login?next=%2Ftree%3F",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+      "Cookie": "_xsrf=2|1bc22c80|c04ac0f24211bbaec7db5362de1018cb|1645058542; username-35-77-132-99-8922=\"2|1:0|10:1645058547|26:username-35-77-132-99-8922|44:YjNjOWFkOTA5Y2JkNDUzZjkzN2U2MzI4MWFmYjJlNzE=|39b718b3971b7dab1d2807e1c2d94b3cfdf4ad64e0ccb01e8d627ef74c67c793\""
+    }
+[E 13:10:19.640 NotebookApp] 500 GET /tree (211.186.218.63) 2.440000ms referer=http://35.77.132.99:8922/login?next=%2Ftree%3F
+[C 13:13:04.955 NotebookApp] received signal 15, stopping
+[I 13:13:04.956 NotebookApp] Shutting down 0 kernels
+[I 13:13:04.964 NotebookApp] Shutting down 0 terminals
+[I 13:16:56.606 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 13:16:56.606 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 13:16:56.606 NotebookApp] http://ip-172-31-38-194:8922/
+[I 13:16:56.606 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:17:07.996 NotebookApp] 302 GET / (211.186.218.63) 0.490000ms
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[C 18:30:01.920 NotebookApp] received signal 15, stopping
+[I 18:30:01.929 NotebookApp] Shutting down 0 kernels
+[I 18:30:01.930 NotebookApp] Shutting down 0 terminals
+[I 09:38:58.308 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 09:38:58.308 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 09:38:58.309 NotebookApp] http://ip-172-31-38-194:8922/
+[I 09:38:58.309 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 09:39:00.745 NotebookApp] 302 GET / (211.186.218.63) 0.480000ms
+[C 13:42:36.841 NotebookApp] Bad config encountered during initialization:
+[C 13:42:36.841 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[C 13:42:46.446 NotebookApp] Bad config encountered during initialization:
+[C 13:42:46.446 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[C 13:42:56.633 NotebookApp] Bad config encountered during initialization:
+[C 13:42:56.633 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[C 13:43:06.308 NotebookApp] Bad config encountered during initialization:
+[C 13:43:06.308 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[I 13:43:52.497 NotebookApp] The port 8922 is already in use, trying another port.
+[I 13:43:52.498 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 13:43:52.498 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 13:43:52.498 NotebookApp] http://ip-172-31-38-194:8923/
+[I 13:43:52.498 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:44:46.277 NotebookApp] Bad config encountered during initialization:
+[C 13:44:46.277 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[I 13:45:03.638 NotebookApp] The port 8922 is already in use, trying another port.
+[I 13:45:03.639 NotebookApp] The port 8923 is already in use, trying another port.
+[I 13:45:03.639 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 13:45:03.639 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 13:45:03.639 NotebookApp] http://ip-172-31-38-194:8924/
+[I 13:45:03.639 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 13:47:03.835 NotebookApp] The port 8922 is already in use, trying another port.
+[I 13:47:03.836 NotebookApp] The port 8923 is already in use, trying another port.
+[I 13:47:03.836 NotebookApp] The port 8924 is already in use, trying another port.
+[I 13:47:03.836 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 13:47:03.836 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 13:47:03.836 NotebookApp] http://ip-172-31-38-194:8925/
+[I 13:47:03.836 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:11:31.021 NotebookApp] 302 GET / (180.224.160.154) 0.540000ms
+[I 14:11:31.062 NotebookApp] 302 GET /tree? (180.224.160.154) 0.510000ms
+[W 14:11:41.581 NotebookApp] 401 POST /login?next=%2Ftree%3F (180.224.160.154) 39.080000ms referer=http://35.77.132.99:8923/login?next=%2Ftree%3F
+[W 14:11:44.899 NotebookApp] 401 POST /login?next=%2Ftree%3F (180.224.160.154) 35.790000ms referer=http://35.77.132.99:8923/login?next=%2Ftree%3F
+[I 14:11:49.182 NotebookApp] 302 POST /login?next=%2Ftree%3F (180.224.160.154) 33.970000ms
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[C 18:30:01.112 NotebookApp] received signal 15, stopping
+[I 18:30:01.113 NotebookApp] Shutting down 0 kernels
+[C 18:30:01.113 NotebookApp] received signal 15, stopping
+[I 18:30:01.114 NotebookApp] Shutting down 0 terminals
+[I 18:30:01.116 NotebookApp] Shutting down 0 kernels
+[C 18:30:01.119 NotebookApp] received signal 15, stopping
+[I 18:30:01.126 NotebookApp] Shutting down 0 kernels
+[I 18:30:01.127 NotebookApp] Shutting down 0 terminals
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[C 18:30:01.145 NotebookApp] received signal 15, stopping
+[I 18:30:01.147 NotebookApp] Shutting down 0 kernels
+[I 18:30:01.148 NotebookApp] Shutting down 0 terminals
+[I 18:30:01.174 NotebookApp] Shutting down 0 terminals
+[I 09:22:09.609 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 09:22:09.610 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 09:22:09.610 NotebookApp] http://ip-172-31-38-194:8922/
+[I 09:22:09.610 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 09:22:32.491 NotebookApp] 302 GET / (211.186.218.63) 0.540000ms
+[I 09:13:12.170 NotebookApp] The port 8922 is already in use, trying another port.
+[I 09:13:12.170 NotebookApp] The port 8923 is already in use, trying another port.
+[I 09:13:12.171 NotebookApp] The port 8924 is already in use, trying another port.
+[I 09:13:12.171 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 09:13:12.171 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 09:13:12.171 NotebookApp] http://ip-172-31-38-194:8925/
+[I 09:13:12.171 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+/usr/lib/python3.6/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 09:13:30.786 NotebookApp] 302 GET / (211.186.218.63) 0.380000ms
+[I 09:24:05.287 NotebookApp] Creating new notebook in 
+[I 09:24:05.298 NotebookApp] Writing notebook-signing key to /home/lab22/.local/share/jupyter/notebook_secret
+[I 09:24:14.478 NotebookApp] Kernel started: 13ae425d-d41d-40df-8006-a5449b00bb8c, name: python3
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7f005cf53a20>()
+handle: <Handle <TaskStepMethWrapper object at 0x7f005cf53a20>()>
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/asyncio/events.py", line 145, in _run
+    self._callback(*self._args)
+KeyError: <_UnixSelectorEventLoop running=True closed=False debug=False>
+[I 09:26:14.531 NotebookApp] Saving file at /Untitled.ipynb
+[I 09:28:15.144 NotebookApp] Saving file at /Untitled.ipynb
+[I 09:40:14.587 NotebookApp] Saving file at /Untitled.ipynb
+[I 09:46:14.579 NotebookApp] Saving file at /Untitled.ipynb
+[I 09:48:14.580 NotebookApp] Saving file at /Untitled.ipynb
+[I 09:50:15.553 NotebookApp] Saving file at /Untitled.ipynb
+[W 09:57:59.244 NotebookApp] Notebook Untitled.ipynb is not trusted
+[I 10:00:14.579 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:00:43.594 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:e0ec4636ff814d2b87b98fe944a7a13c
+[I 10:00:43.909 NotebookApp] Kernel restarted: 13ae425d-d41d-40df-8006-a5449b00bb8c
+[I 10:00:44.004 NotebookApp] Restoring connection for 13ae425d-d41d-40df-8006-a5449b00bb8c:e0ec4636ff814d2b87b98fe944a7a13c
+[I 10:00:44.360 NotebookApp] Replaying 3 buffered messages
+[I 10:02:14.594 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:10:14.626 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:12:14.567 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:14:16.615 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:16:15.023 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:18:14.953 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:20:15.273 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:22:15.292 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:24:15.141 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:26:15.466 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:28:15.194 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:30:15.605 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:32:15.489 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:34:15.509 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:36:15.306 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:38:15.251 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:40:15.270 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:42:15.673 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:44:15.208 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:46:15.580 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:48:15.959 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:50:15.860 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:52:16.114 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:54:15.666 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:56:15.711 NotebookApp] Saving file at /SeoulTemp.ipynb
+[I 10:58:15.513 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:00:11.323 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:02:16.053 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:04:15.727 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:06:15.564 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:12:16.922 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:14:16.097 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:16:15.911 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:18:15.967 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:20:15.951 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:22:16.878 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:24:15.735 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:26:16.024 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:28:15.965 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:30:16.203 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:32:19.164 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:42:16.478 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:44:16.131 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:46:15.943 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:48:15.976 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 11:50:16.167 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:04:16.094 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:06:15.919 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:08:15.560 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:09:12.905 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:10:15.994 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:11:09.089 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:12:15.926 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:14:15.608 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:16:15.879 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:18:15.835 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:20:15.440 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:32:16.560 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:34:16.430 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:38:15.818 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:40:16.065 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:42:17.556 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 13:58:16.515 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:00:16.239 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:04:16.112 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:26:16.194 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:34:17.135 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:36:16.528 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:38:16.463 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:40:16.258 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:46:15.862 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:48:17.149 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:50:16.632 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:52:16.032 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 14:54:16.197 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:14:16.446 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:16:16.564 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:18:16.839 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:20:16.274 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:22:16.022 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:24:16.248 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:26:16.439 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:28:16.298 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:30:16.443 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:32:16.217 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:34:16.540 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:36:16.466 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:38:18.586 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:40:16.316 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:42:16.233 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:44:17.081 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:46:16.187 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:48:16.093 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:50:16.483 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:54:16.438 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 15:56:16.413 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 16:00:16.016 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 16:02:16.449 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 17:12:16.819 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 17:22:17.236 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 17:24:16.282 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[I 17:52:09.108 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:e0ec4636ff814d2b87b98fe944a7a13c
+[C 10:02:07.361 NotebookApp] Bad config encountered during initialization:
+[C 10:02:07.361 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[C 10:02:18.395 NotebookApp] Bad config encountered during initialization:
+[C 10:02:18.395 NotebookApp] The 'port' trait of a NotebookApp instance must be an int, but a value of '8xxx' <class 'str'> was specified.
+The Jupyter HTML Notebook.
+
+This launches a Tornado based HTML Notebook Server that serves up an
+HTML5/Javascript Notebook client.
+
+Subcommands
+-----------
+
+Subcommands are launched as `jupyter-notebook cmd [args]`. For information on
+using subcommand 'cmd', do: `jupyter-notebook cmd -h`.
+
+list
+    List currently running notebook servers.
+stop
+    Stop currently running notebook server.
+password
+    Set a password for the notebook server.
+
+Options
+-------
+
+Arguments that take values are actually convenience aliases to full
+Configurables, whose aliases are listed on the help line. For more information
+on full configurables, see '--help-all'.
+
+--debug
+    set log level to logging.DEBUG (maximize logging output)
+--generate-config
+    generate default config file
+-y
+    Answer yes to any questions instead of prompting.
+--no-browser
+    Don't open the notebook in a browser after startup.
+--pylab
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--no-mathjax
+    Disable MathJax
+    
+    MathJax is the javascript library Jupyter uses to render math/LaTeX. It is
+    very large, so you may want to disable it if you have a slow internet
+    connection, or for offline use of the notebook.
+    
+    When disabled, equations etc. will appear as their untransformed TeX source.
+--allow-root
+    Allow the notebook to be run from root user.
+--autoreload
+    Autoreload the webapp
+    
+    Enable reloading of the tornado webapp and all imported Python packages
+    when any changes are made to any Python src files in Notebook or
+    extensions.
+--script
+    DEPRECATED, IGNORED
+--no-script
+    DEPRECATED, IGNORED
+--log-level=<Enum> (Application.log_level)
+    Default: 30
+    Choices: (0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL')
+    Set the log level by value or name.
+--config=<Unicode> (JupyterApp.config_file)
+    Default: ''
+    Full path of a config file.
+--ip=<Unicode> (NotebookApp.ip)
+    Default: 'localhost'
+    The IP address the notebook server will listen on.
+--port=<Int> (NotebookApp.port)
+    Default: 8888
+    The port the notebook server will listen on (env: JUPYTER_PORT).
+--port-retries=<Int> (NotebookApp.port_retries)
+    Default: 50
+    The number of additional ports to try if the specified port is not available
+    (env: JUPYTER_PORT_RETRIES).
+--sock=<Unicode> (NotebookApp.sock)
+    Default: ''
+    The UNIX socket the notebook server will listen on.
+--sock-mode=<Unicode> (NotebookApp.sock_mode)
+    Default: '0600'
+    The permissions mode for UNIX socket creation (default: 0600).
+--transport=<CaselessStrEnum> (KernelManager.transport)
+    Default: 'tcp'
+    Choices: ['tcp', 'ipc']
+--keyfile=<Unicode> (NotebookApp.keyfile)
+    Default: ''
+    The full path to a private key file for usage with SSL/TLS.
+--certfile=<Unicode> (NotebookApp.certfile)
+    Default: ''
+    The full path to an SSL/TLS certificate file.
+--client-ca=<Unicode> (NotebookApp.client_ca)
+    Default: ''
+    The full path to a certificate authority certificate for SSL/TLS client
+    authentication.
+--notebook-dir=<Unicode> (NotebookApp.notebook_dir)
+    Default: ''
+    The directory to use for notebooks and kernels.
+--browser=<Unicode> (NotebookApp.browser)
+    Default: ''
+    Specify what command to use to invoke a web browser when opening the
+    notebook. If not specified, the default browser will be determined by the
+    `webbrowser` standard library module, which allows setting of the BROWSER
+    environment variable to override it.
+--pylab=<Unicode> (NotebookApp.pylab)
+    Default: 'disabled'
+    DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
+--gateway-url=<Unicode> (GatewayClient.url)
+    Default: None
+    The url of the Kernel or Enterprise Gateway server where kernel
+    specifications are defined and kernel management takes place. If defined,
+    this Notebook server acts as a proxy for all kernel management and kernel
+    specification retrieval.  (JUPYTER_GATEWAY_URL env var)
+
+To see all available configurables, use `--help-all`
+
+Examples
+--------
+
+    jupyter notebook                       # start the notebook
+    jupyter notebook --certfile=mycert.pem # use SSL/TLS certificate
+    jupyter notebook password              # enter a password to protect the server
+
+[I 10:02:44.405 NotebookApp] 302 GET / (211.186.218.63) 0.400000ms
+[I 10:54:21.394 NotebookApp] 302 GET / (111.7.96.149) 0.430000ms
+[I 10:54:29.378 NotebookApp] 302 GET / (209.141.41.193) 0.380000ms
+[I 10:54:29.742 NotebookApp] 302 GET /tree? (209.141.41.193) 0.590000ms
+[I 10:54:30.690 NotebookApp] 302 GET / (211.95.50.5) 0.420000ms
+[I 10:54:30.757 NotebookApp] 302 GET /tree? (211.95.50.4) 0.530000ms
+[I 11:06:04.950 NotebookApp] Creating new notebook in 
+[I 11:06:14.042 NotebookApp] Kernel started: 4bd57b7d-0563-458b-9d90-11cda9d26837, name: python3
+[I 11:08:14.109 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:09:02.992 NotebookApp] Uploading file to /testdata.csv
+[W 11:09:05.188 NotebookApp] Notebook Untitled.ipynb is not trusted
+[I 11:10:15.292 NotebookApp] Saving file at /Untitled.ipynb
+[W 11:10:22.986 NotebookApp] 400 GET /api/contents/testdata.csv?type=file&format=text&_=1645582221862 (211.186.218.63): /home/lab22/testdata.csv is not UTF-8 encoded
+[W 11:10:22.987 NotebookApp] /home/lab22/testdata.csv is not UTF-8 encoded
+[W 11:10:22.987 NotebookApp] 400 GET /api/contents/testdata.csv?type=file&format=text&_=1645582221862 (211.186.218.63) 1.140000ms referer=http://35.77.132.99:8922/edit/testdata.csv
+[W 11:11:18.738 NotebookApp] delete /testdata.csv
+[I 11:11:29.665 NotebookApp] Uploading file to /testdata.csv
+[I 11:11:32.404 NotebookApp] Starting buffering for 4bd57b7d-0563-458b-9d90-11cda9d26837:18dad449a3c8466bb45380aae99841e5
+[W 11:11:35.332 NotebookApp] Notebook Untitled.ipynb is not trusted
+[I 11:13:35.592 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:15:35.587 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:17:35.600 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:19:35.581 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:21:35.580 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:23:04.814 NotebookApp] 302 GET /tree? (121.5.113.11) 0.580000ms
+[I 11:23:35.595 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:29:35.648 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:37:35.615 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:39:35.628 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:39:40.059 NotebookApp] Starting buffering for 4bd57b7d-0563-458b-9d90-11cda9d26837:d1b2ead710fb47c088e91dc4370bfef9
+[W 13:03:46.026 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:06:12.492 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:06:12.493 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:08:11.749 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:08:11.751 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:30:12.726 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:30:12.727 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:32:12.320 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:32:12.321 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:34:12.500 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:34:12.501 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:36:11.822 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:36:11.823 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:38:12.278 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:38:12.279 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:40:12.244 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:40:12.245 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:42:11.706 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:42:11.708 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:44:12.228 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:44:12.229 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:46:12.132 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:46:12.133 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:48:12.387 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:48:12.388 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:50:12.480 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:50:12.481 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:56:12.181 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:56:12.182 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 13:58:12.214 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 13:58:12.215 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:00:12.906 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:00:12.907 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:14:13.081 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:14:13.082 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:16:12.370 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:16:12.371 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:18:11.969 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:18:11.970 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:26:12.976 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:26:12.977 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:28:12.320 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:28:12.321 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:30:11.664 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:30:11.665 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:34:12.066 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:34:12.067 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:36:11.684 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:36:11.685 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:38:11.810 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:38:11.811 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:40:11.922 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:40:11.923 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:42:12.016 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:42:12.017 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:44:11.999 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:44:12.000 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:46:12.331 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:46:12.333 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:48:12.057 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:48:12.058 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:50:11.959 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:50:11.960 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:52:12.058 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:52:12.059 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:04:12.303 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:04:12.304 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:06:11.844 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:06:11.845 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:08:12.129 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:08:12.130 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:10:13.278 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:10:13.279 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:16:12.376 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:16:12.377 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:18:12.366 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:18:12.367 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:20:12.320 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:20:12.321 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:26:12.613 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:26:12.614 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:28:11.981 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:28:11.982 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:29:19.942 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:ccb381a8d56b4658838a13e841fe3fde
+[W 15:29:20.605 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:31:51.185 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:31:51.186 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:39:50.874 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:39:50.875 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:41:51.092 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:41:51.093 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:43:50.402 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:43:50.403 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:45:53.943 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:45:53.944 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:47:50.406 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:47:50.407 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:49:50.322 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:49:50.323 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:51:50.259 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:51:50.260 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:55:50.507 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:55:50.508 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:57:50.407 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:57:50.409 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 15:59:51.569 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 15:59:51.571 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:13:50.919 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:13:50.921 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:15:51.222 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:15:51.223 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:17:51.193 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:17:51.194 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:21:51.005 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:21:51.006 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:25:51.043 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:25:51.044 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:27:50.741 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:27:50.742 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:29:51.299 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:29:51.300 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:33:51.030 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:33:51.031 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:35:50.793 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:35:50.794 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:37:50.593 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:37:50.594 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 16:43:51.998 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 16:43:51.999 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:01:50.899 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:01:50.900 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:03:50.768 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:03:50.770 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:05:50.807 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:05:50.808 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:06:46.447 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:06:46.449 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:06:54.635 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:f49da075354343cf88477c7f4176bc49
+[I 17:06:58.497 NotebookApp] Creating new notebook in 
+[I 17:06:59.435 NotebookApp] Kernel started: ff1209be-b167-425c-9660-36a3badc3a13, name: python3
+[W 17:07:20.312 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:09:00.164 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:10:59.503 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:12:07.226 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:185d891da8664b3684d8b16c2c886dfe
+[I 17:12:07.539 NotebookApp] Kernel restarted: ff1209be-b167-425c-9660-36a3badc3a13
+[I 17:12:07.638 NotebookApp] Restoring connection for ff1209be-b167-425c-9660-36a3badc3a13:185d891da8664b3684d8b16c2c886dfe
+[I 17:12:08.144 NotebookApp] Replaying 3 buffered messages
+[I 17:13:00.164 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:13:57.874 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:13:57.875 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:15:58.657 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:15:58.658 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:17:00.164 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 17:17:25.730 NotebookApp] delete /Seoul_Kospi_drop.csv
+[I 17:17:58.055 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 17:17:58.057 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:18:59.499 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:20:59.514 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:21:20.885 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:22:59.508 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:24:59.518 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:26:59.623 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:30:59.618 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:32:59.552 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:34:59.570 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 17:50:59.820 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[I 19:47:17.293 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:185d891da8664b3684d8b16c2c886dfe
+[I 19:47:17.341 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:631aa7973a0148099e08c51129486fcf
+[I 09:11:32.455 NotebookApp] 302 GET / (211.186.218.63) 0.470000ms
+[W 09:12:34.425 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:14:37.956 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:14:37.957 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[W 09:20:57.189 NotebookApp] Replacing stale connection: ff1209be-b167-425c-9660-36a3badc3a13:9e546edfb493472f8fd05225166fdb8c
+[I 09:21:02.190 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:9e546edfb493472f8fd05225166fdb8c
+[I 09:21:02.191 NotebookApp] Restoring connection for ff1209be-b167-425c-9660-36a3badc3a13:9e546edfb493472f8fd05225166fdb8c
+[I 09:28:38.340 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:28:38.340 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:30:37.980 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:30:37.981 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:32:39.280 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:32:39.280 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:34:37.913 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:34:37.913 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:36:37.888 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:36:37.888 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:38:37.867 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:38:37.868 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:40:37.832 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:40:37.832 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:42:37.896 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:42:37.896 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:46:37.877 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:46:37.877 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:48:37.889 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:48:37.889 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:50:37.889 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:50:37.889 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:52:37.906 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:52:37.906 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:10:38.401 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:10:38.401 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:12:38.050 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:12:38.051 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:14:38.125 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:14:38.126 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:22:38.491 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:22:38.491 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:24:38.142 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:24:38.143 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:28:38.124 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:28:38.124 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:30:37.918 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:30:37.919 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:32:38.182 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:32:38.183 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:34:38.013 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:34:38.014 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 10:50:39.194 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 10:50:39.195 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 11:32:38.450 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 11:32:38.451 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 11:34:38.205 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 11:34:38.206 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 11:36:38.124 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 11:36:38.125 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 11:38:38.104 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 11:38:38.105 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 11:42:37.973 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 11:42:37.974 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:04:40.761 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:04:40.761 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:06:38.961 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:06:38.961 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:08:42.809 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:08:42.809 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:10:38.902 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:10:38.902 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:12:39.084 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:12:39.085 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:14:39.935 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:14:39.936 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:18:40.187 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:18:40.188 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:20:39.000 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:20:39.001 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:22:38.859 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:22:38.860 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:24:38.824 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:24:38.825 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:26:38.737 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:26:38.737 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:28:38.374 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:28:38.374 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:32:40.308 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:32:40.308 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:34:45.007 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:34:45.008 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:40:39.749 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:40:39.749 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:42:38.914 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:42:38.915 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:44:38.776 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:44:38.777 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:46:38.770 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:46:38.770 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 13:48:38.734 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 13:48:38.735 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[W 14:07:00.968 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:10:09.360 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:10:09.361 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:12:09.456 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:12:09.458 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:12:22.717 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:f1f10b71be374971896ef789ab691801
+[I 14:12:23.130 NotebookApp] Kernel restarted: 13ae425d-d41d-40df-8006-a5449b00bb8c
+[I 14:12:23.235 NotebookApp] Restoring connection for 13ae425d-d41d-40df-8006-a5449b00bb8c:f1f10b71be374971896ef789ab691801
+[I 14:12:23.740 NotebookApp] Replaying 3 buffered messages
+[I 14:12:58.391 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:f1f10b71be374971896ef789ab691801
+[I 14:12:58.604 NotebookApp] Kernel restarted: 13ae425d-d41d-40df-8006-a5449b00bb8c
+[I 14:12:58.800 NotebookApp] Restoring connection for 13ae425d-d41d-40df-8006-a5449b00bb8c:f1f10b71be374971896ef789ab691801
+[I 14:12:59.305 NotebookApp] Replaying 3 buffered messages
+[I 14:14:09.990 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:14:09.991 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:15:13.217 NotebookApp] Saving file at /Seoul_Hot.ipynb
+[W 14:15:13.219 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:16:54.670 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:f1f10b71be374971896ef789ab691801
+[W 14:17:23.721 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:20:21.144 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:6f384f1470cf4b758d728201af6e48a2
+[I 14:20:25.392 NotebookApp] Creating new notebook in 
+[I 14:20:26.364 NotebookApp] Kernel started: 2cb05c17-5bab-4f86-bb0a-157e327b0613, name: python3
+[I 14:22:26.442 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:28:26.451 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:28:29.301 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:5564943300ce47a08bd0de08bd26ef9b
+[I 14:28:29.513 NotebookApp] Kernel restarted: 2cb05c17-5bab-4f86-bb0a-157e327b0613
+[I 14:28:29.620 NotebookApp] Restoring connection for 2cb05c17-5bab-4f86-bb0a-157e327b0613:5564943300ce47a08bd0de08bd26ef9b
+[I 14:28:30.004 NotebookApp] Replaying 3 buffered messages
+[I 14:30:26.448 NotebookApp] Saving file at /Untitled1.ipynb
+[W 14:31:36.083 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 14:32:31.340 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:34:28.617 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:36:30.040 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:38:29.804 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:40:29.891 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:42:29.051 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:44:28.623 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:46:27.577 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:48:27.671 NotebookApp] Saving file at /Untitled1.ipynb
+[I 14:50:27.482 NotebookApp] Saving file at /Untitled1.ipynb
+[I 15:26:28.140 NotebookApp] Saving file at /Untitled1.ipynb
+[I 15:28:27.756 NotebookApp] Saving file at /Untitled1.ipynb
+[I 15:34:28.451 NotebookApp] Saving file at /Untitled1.ipynb
+[I 15:36:27.621 NotebookApp] Saving file at /Untitled1.ipynb
+[I 15:38:28.586 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 15:38:35.673 NotebookApp] Creating new notebook in 
+[I 15:38:36.955 NotebookApp] Kernel started: 18439a08-e2a0-449a-a0b4-5bdfe4703a3d, name: python3
+[I 15:40:29.275 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 15:40:37.361 NotebookApp] Saving file at /Untitled1.ipynb
+[W 15:41:27.216 NotebookApp] delete /SeoulTemp_Kospi_Kosdaq_drop.csv
+[I 15:42:16.127 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:ddff67b7b11f4a7fb8af99ed61f9d9b0
+[I 15:42:29.620 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 15:42:37.040 NotebookApp] Saving file at /Untitled1.ipynb
+[W 15:43:44.368 NotebookApp] Notebook Untitled.ipynb is not trusted
+[I 15:43:45.878 NotebookApp] Starting buffering for 4bd57b7d-0563-458b-9d90-11cda9d26837:59fa73aae036479f941a9cd41327d04b
+[I 15:46:38.962 NotebookApp] Saving file at /SeoulTemp_draw.ipynb
+[I 15:48:37.202 NotebookApp] Saving file at /SeoulTemp_draw.ipynb
+[I 15:52:37.477 NotebookApp] Saving file at /SeoulTemp_draw.ipynb
+[I 15:54:28.505 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 15:56:28.274 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 15:58:28.102 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:00:28.167 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:02:28.439 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:02:30.449 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:5564943300ce47a08bd0de08bd26ef9b
+[I 16:02:30.762 NotebookApp] Kernel restarted: 2cb05c17-5bab-4f86-bb0a-157e327b0613
+[I 16:02:30.865 NotebookApp] Restoring connection for 2cb05c17-5bab-4f86-bb0a-157e327b0613:5564943300ce47a08bd0de08bd26ef9b
+[I 16:02:31.199 NotebookApp] Replaying 3 buffered messages
+[I 16:04:27.692 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:06:28.353 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:10:28.220 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:12:28.998 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:14:26.565 NotebookApp] Starting buffering for 18439a08-e2a0-449a-a0b4-5bdfe4703a3d:b7e94e2a50884eb9896aff3b0314af48
+[I 16:14:33.175 NotebookApp] Kernel shutdown: 18439a08-e2a0-449a-a0b4-5bdfe4703a3d
+[W 16:14:33.177 NotebookApp] delete /SeoulTemp_draw.ipynb
+[I 16:16:28.665 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:18:28.969 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[I 16:18:29.692 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:5564943300ce47a08bd0de08bd26ef9b
+[W 16:18:31.629 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:20:34.767 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:20:34.768 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:22:34.599 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:22:34.600 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:24:34.563 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:24:34.564 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:26:34.496 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:26:34.496 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:28:34.467 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:28:34.467 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[W 16:29:25.750 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 16:31:52.856 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[W 16:31:52.857 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 16:33:51.992 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[W 16:33:51.992 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 16:35:52.441 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[W 16:35:52.442 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 16:37:53.343 NotebookApp] Saving file at /SeoulTemp_Kospi_Kosdaq_drop.ipynb
+[W 16:37:53.344 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 16:38:34.748 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:38:34.748 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:40:34.609 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:40:34.610 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:42:34.509 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:42:34.510 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:44:35.330 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:44:35.331 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:46:34.974 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:46:34.975 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:48:37.367 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:48:37.368 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 16:50:35.134 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 16:50:35.134 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 17:06:35.052 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 17:06:35.053 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 19:21:58.081 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:4439f15e8bf748c1b141071313b6e1a7
+[I 19:21:58.116 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:e3b3454831af4ac79c2e4d5a7ee365d6
+[I 09:13:46.799 NotebookApp] 302 GET / (211.186.218.63) 0.420000ms
+[W 09:14:06.966 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:20:09.358 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:20:09.359 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[W 09:21:01.161 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 09:22:04.872 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:a9ffc159228e4ab899fbfb9f6f8c75f5
+[W 09:22:08.629 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 09:22:12.552 NotebookApp] Saving file at /SeoulTemp_Kospi_draw.ipynb
+[W 09:22:12.553 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 09:22:57.718 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:737c997feacd4cfbaab93c9e3d401d72
+[I 09:23:00.578 NotebookApp] Creating new notebook in 
+[I 09:23:01.477 NotebookApp] Kernel started: ad06d162-2dca-418a-946e-81e7e0f7378a, name: python3
+[I 09:23:59.716 NotebookApp] Saving file at /Untitled1.ipynb
+[I 09:25:01.786 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 09:25:02.648 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 09:39:01.607 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:41:01.556 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:42:20.073 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:42:52.967 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:45:01.557 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:45:59.549 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:47:01.564 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:51:01.552 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 09:53:01.590 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:01:01.713 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:03:01.611 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:13:01.702 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:15:01.635 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:17:01.708 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:19:01.808 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:21:02.112 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:45:02.127 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:55:02.465 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 10:57:02.225 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 11:47:05.776 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:05:02.365 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:07:02.518 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:09:02.323 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:11:02.095 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:13:02.045 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:23:02.368 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:31:02.597 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:33:02.440 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:35:02.637 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:37:02.834 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:39:02.317 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:41:02.820 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:43:02.265 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:45:10.771 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:51:03.227 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 13:53:02.324 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 14:17:02.316 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 14:19:02.220 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:15:02.692 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:17:02.453 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:19:02.476 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:21:02.436 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:23:02.497 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:25:02.580 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:27:02.636 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:29:02.517 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:31:02.269 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:33:02.248 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:35:02.522 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:47:03.350 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:49:02.698 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:51:02.689 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 15:53:02.714 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 16:03:02.621 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 16:05:02.773 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 16:07:02.389 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 16:07:23.156 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[I 20:18:07.952 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:f8bbf73bc5c142879bb51c892cbdb5d0
+[I 20:18:07.990 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:23e05402d1f440c2834bd0066b0aa495
+[I 20:18:12.135 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:c0f955edb0f74e4583dfe7e102c6fbc4
+[I 09:04:40.528 NotebookApp] 302 GET / (211.186.218.63) 0.400000ms
+[W 15:09:55.591 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 15:10:12.608 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:4c34199491924d5f9f135c575e843f88
+[W 15:10:14.591 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 15:13:22.190 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:8d78a8987c304c2588e35458d056c216
+[W 15:14:17.435 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:32:28.159 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:32:28.159 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:38:27.509 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:38:27.509 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:40:27.008 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:40:27.009 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:42:26.863 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:42:26.864 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:46:26.778 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:46:26.779 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:48:26.815 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:48:26.815 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 16:52:27.645 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 16:52:27.646 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 17:04:27.499 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 17:04:27.500 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 17:06:26.962 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 17:06:26.963 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 17:08:27.001 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 17:08:27.002 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 17:10:21.521 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 17:10:21.522 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 17:14:26.867 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 17:14:26.868 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[W 17:49:18.036 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 17:51:50.495 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:29e8b39137724fe9856a680a83dc9eb7
+[I 17:51:50.570 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:c4d3d7fb62044b1e95ca84f1c63b35e8
+[I 19:25:36.008 NotebookApp] 302 GET / (211.186.218.63) 0.380000ms
+[W 20:09:53.053 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 20:39:58.341 NotebookApp] Saving file at /SeoulTemp_Summer.ipynb
+[W 20:39:58.343 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[W 22:06:16.889 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 23:24:07.579 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:512754906d5d44e4975142b594cf199f
+[I 23:24:07.644 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:05e5acc1dd9143dcb1eab2e420bddb7f
+[I 15:05:36.913 NotebookApp] 302 GET / (152.32.168.210) 0.450000ms
+[I 15:05:36.967 NotebookApp] 302 GET /tree (152.32.168.210) 0.500000ms
+[I 15:05:42.141 NotebookApp] 302 GET / (152.32.168.210) 0.420000ms
+[I 15:05:47.252 NotebookApp] 302 GET / (152.32.168.210) 0.430000ms
+[W 15:05:47.272 NotebookApp] 404 GET /h5 (152.32.168.210) 7.310000ms referer=None
+[I 15:05:47.836 NotebookApp] 302 GET /xy/ (152.32.168.210) 0.410000ms
+[I 15:05:47.958 NotebookApp] 302 GET /otc/ (152.32.168.210) 0.360000ms
+[W 15:05:48.445 NotebookApp] 404 GET /xy (152.32.168.210) 1.310000ms referer=None
+[W 15:05:52.327 NotebookApp] 404 GET /m (152.32.168.210) 1.180000ms referer=None
+[I 15:05:52.328 NotebookApp] 302 GET /h5/ (152.32.168.210) 0.240000ms
+[W 15:06:02.657 NotebookApp] 404 GET /mtja.html (152.32.168.210) 1.270000ms referer=None
+[W 15:06:02.985 NotebookApp] 404 GET /api/index (152.32.168.210) 1.250000ms referer=None
+[I 19:17:13.665 NotebookApp] 302 GET / (211.186.218.63) 0.380000ms
+[W 19:26:18.470 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[W 20:49:46.534 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[W 21:19:57.747 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[W 21:22:42.977 NotebookApp] Notebook Untitled.ipynb is not trusted
+[I 21:22:45.376 NotebookApp] Starting buffering for 4bd57b7d-0563-458b-9d90-11cda9d26837:0eca84363b56491b879c1f3702122c7f
+[W 21:22:52.218 NotebookApp] Notebook SeoulTemp_Kospi_draw.ipynb is not trusted
+[I 21:26:38.453 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:33203fed34ef4c8692ab25e49e99481b
+[I 21:26:40.690 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:d221870bdc6d4ebb823808b9606473b7
+[I 21:52:07.492 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:770372b1c0c0457a9893b14eb915eff6
+[I 21:52:07.498 NotebookApp] Starting buffering for ff1209be-b167-425c-9660-36a3badc3a13:eecfd1983673499f81271b72f279abe9
+[I 09:10:08.424 NotebookApp] 302 GET / (211.186.218.63) 0.380000ms
+[W 10:05:41.757 NotebookApp] Notebook SeoulTemp_Summer.ipynb is not trusted
+[I 10:06:22.679 NotebookApp] Starting buffering for ad06d162-2dca-418a-946e-81e7e0f7378a:34ba1f4046f1471184224231cef7529c
+[I 10:50:37.468 NotebookApp] The port 8922 is already in use, trying another port.
+[I 10:50:37.468 NotebookApp] The port 8923 is already in use, trying another port.
+[I 10:50:37.468 NotebookApp] The port 8924 is already in use, trying another port.
+[I 10:50:37.468 NotebookApp] The port 8925 is already in use, trying another port.
+[I 10:50:37.469 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 10:50:37.469 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 10:50:37.469 NotebookApp] http://ip-172-31-38-194:8926/
+[I 10:50:37.469 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 10:50:43.902 NotebookApp] 302 GET / (175.209.64.54) 0.450000ms
+[I 10:50:43.942 NotebookApp] 302 GET /tree? (175.209.64.54) 0.560000ms
+[I 10:50:48.064 NotebookApp] 302 POST /login?next=%2Ftree%3F (175.209.64.54) 47.890000ms
+[W 13:42:27.579 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 19:15:17.590 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:b533a6b23bc549fe88a7acd01ccc99f2
+[I 09:11:00.086 NotebookApp] 302 GET / (211.186.218.63) 0.390000ms
+[W 10:45:29.173 NotebookApp] Notebook SeoulTemp_Kospi_Kosdaq_drop.ipynb is not trusted
+[I 17:51:35.545 NotebookApp] Starting buffering for 2cb05c17-5bab-4f86-bb0a-157e327b0613:4dbaa75b81d5473c8a54a6f6cbf53072
+[I 13:23:37.083 NotebookApp] 302 GET / (211.186.218.63) 0.470000ms
+[W 13:23:44.019 NotebookApp] Notebook Seoul_Hot.ipynb is not trusted
+[I 17:57:12.392 NotebookApp] Starting buffering for 13ae425d-d41d-40df-8006-a5449b00bb8c:b6b6ed533cd64d00aeffe2fb9ea0e500
+[C 09:13:12.475 NotebookApp] received signal 15, stopping
+[I 09:13:12.483 NotebookApp] Shutting down 0 kernels
+[I 09:13:12.484 NotebookApp] Shutting down 0 terminals
+[C 09:13:12.520 NotebookApp] received signal 15, stopping
+[I 09:13:12.521 NotebookApp] Shutting down 0 kernels
+[I 09:13:12.522 NotebookApp] Shutting down 0 terminals
+[C 09:13:12.635 NotebookApp] received signal 15, stopping
+[I 09:13:12.635 NotebookApp] Shutting down 5 kernels
+[I 09:13:12.638 NotebookApp] Kernel shutdown: 13ae425d-d41d-40df-8006-a5449b00bb8c
+[I 09:13:12.744 NotebookApp] Kernel shutdown: 4bd57b7d-0563-458b-9d90-11cda9d26837
+[I 09:13:12.746 NotebookApp] Kernel shutdown: ff1209be-b167-425c-9660-36a3badc3a13
+[I 09:13:12.749 NotebookApp] Kernel shutdown: 2cb05c17-5bab-4f86-bb0a-157e327b0613
+[I 09:13:12.752 NotebookApp] Kernel shutdown: ad06d162-2dca-418a-946e-81e7e0f7378a
+[I 09:13:12.959 NotebookApp] Shutting down 0 terminals
+[I 17:07:15.636 NotebookApp] The port 8921 is already in use, trying another port.
+[I 17:07:15.638 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 17:07:15.638 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:07:15.638 NotebookApp] http://ip-172-31-38-194:8922/
+[I 17:07:15.638 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:07:17.383 NotebookApp] The port 8921 is already in use, trying another port.
+[I 17:07:17.383 NotebookApp] The port 8922 is already in use, trying another port.
+[I 17:07:17.384 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 17:07:17.384 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:07:17.384 NotebookApp] http://ip-172-31-38-194:8923/
+[I 17:07:17.384 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:07:19.954 NotebookApp] The port 8921 is already in use, trying another port.
+[I 17:07:19.954 NotebookApp] The port 8922 is already in use, trying another port.
+[I 17:07:19.954 NotebookApp] The port 8923 is already in use, trying another port.
+[I 17:07:19.954 NotebookApp] Serving notebooks from local directory: /home/lab22
+[I 17:07:19.954 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+[I 17:07:19.954 NotebookApp] http://ip-172-31-38-194:8924/
+[I 17:07:19.954 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 17:08:10.202 NotebookApp] 302 GET / (211.186.218.63) 0.490000ms
+[I 17:08:27.009 NotebookApp] 302 GET / (180.224.160.154) 0.490000ms
+[W 17:08:27.049 NotebookApp] Clearing invalid/expired login cookie username-35-77-132-99-8923
+[W 17:08:27.050 NotebookApp] Clearing invalid/expired login cookie username-35-77-132-99-8923
+[I 17:08:27.050 NotebookApp] 302 GET /tree? (180.224.160.154) 1.950000ms
